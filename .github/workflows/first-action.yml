@@ -8,3 +8,7 @@ jobs: # work that has to be done
         run: echo "hello world"
       - name: Print goodbye
         run: echo "Done - Bye!"
+      - name: Running multiline shell # step name, run both commands in same step
+        run: | 
+          echo "First Output"
+          echo "Second Output"
